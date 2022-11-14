@@ -26,12 +26,12 @@ async def send_data(update, context):
     )
 
 
-application = ApplicationBuilder().token('ВАШ ТОКЕН БОТА').build()
+application = ApplicationBuilder().token('5475995602:AAEJPKAsmIY2pkcQKZI1xDI_grpe0vLZb0o').build()
 
 start_handler = CommandHandler('start', start)
 application.add_handler(start_handler)
 
-weather_sender = MessageHandler(filters.TEXT, send_weather)
+weather_sender = MessageHandler(filters.TEXT, send_data)
 application.add_handler(weather_sender)
 
 application.run_polling()
