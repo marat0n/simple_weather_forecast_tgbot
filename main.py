@@ -26,7 +26,7 @@ async def send_data(update, context):
     )
 
 
-application = ApplicationBuilder().token('5475995602:AAEJPKAsmIY2pkcQKZI1xDI_grpe0vLZb0o').build()
+application = ApplicationBuilder().token('ВАШ ТОКЕН ИЗ BOTFATHER').build()
 
 start_handler = CommandHandler('start', start)
 application.add_handler(start_handler)
